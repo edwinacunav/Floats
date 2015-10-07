@@ -1,0 +1,111 @@
+.uppercased {
+	text-transform: uppercase;
+	float: left;
+}
+header {
+	clear: both;
+}
+div .navbar .nav {
+	font-family "Helvetica Neue", Helvetica, Trebuchet, sans-serif;
+}
+.container > .navbar-header, .container > .navbar-collapse {
+	margin-right: 0px;
+	margin-left: 0px;
+	overflow: visible !important;
+	max-height: 340px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+h2 {
+    color: aqua important;
+    /*border-top: 3px dotted blue;*/
+    font-size: 1.8em;
+    font-family: Trebuchet;
+    /* font-style: oblique; */
+    letter-spacing: 5px;
+    border: 5px solid red;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+p {
+    /* color: #00FF00; font-style: italic; */
+    font-weight: 600;
+}
+.nav {
+	clear: both;
+	background: #3D3D3E none repeat scroll 0% 0%;
+	font: 13px/1.4 "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+	font-size: 13px;
+	line-height: 1.4;
+	position: relative;
+	white-space: nowrap;
+	height: 35px;
+	margin-left: 0px;
+}
+.nav a {
+	text-decoration: none;
+	color: #76DAFF;
+	display: inline-block;
+	position: relative;
+	padding: 8px 16px;
+}
+.nav a.active {
+	background: #cccccc;
+	color: #000000;
+}
+.nav a.active:after {
+	border-top-color: #cccccc;
+}
+.nav a:hover {
+	background: #76DAFF;
+	color: #000000;
+}
+.nav ul {
+	list-style: outside none none;
+}
+.nav li {
+	display: inline-block;
+}
+.hide {
+	display: none !important;
+}
+#output {
+	height: 100%;
+	overflow: hidden;
+}
+.container {
+	border: solid 1px black;
+	background: #ccc;
+}
+.code-box {
+	
+}
+.code-box .active {
+	
+}
+.active {
+	
+}
+.col {
+	float: left;
+	width: 50%;
+	padding: 1.3em;
+}
+.main {
+	font-weight: bold;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
