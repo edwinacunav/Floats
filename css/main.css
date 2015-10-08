@@ -11,9 +11,7 @@ footer {
 	font: 13px/1.4 "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
 	line-height: 1.4;
 	color: white;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding: 10px 0px 10px 10px;
 }
 div .navbar .nav {
 	font-family "Helvetica Neue", Helvetica, Trebuchet, sans-serif;
