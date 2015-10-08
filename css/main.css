@@ -16,6 +16,9 @@ footer {
 div .navbar .nav {
 	font-family "Helvetica Neue", Helvetica, Trebuchet, sans-serif;
 }
+div .col ol li {
+	margin-left: 35px;
+}
 .container > .navbar-header, .container > .navbar-collapse {
 	margin-right: 0px;
 	margin-left: 0px;
