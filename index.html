@@ -2,17 +2,59 @@
 <html>
     <head>
 	    <meta charset="utf-8">
-        <title>Hello World</title>
+        <title>Human Rights</title>
 		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<script src="js/main.js"/></script>
+		<!-- <script type="text/javascript">
+			var tab1 = ['preamble-link', 'first-article-link', 'second-article-link', 'history-link'];
+			var tab2 = ['first-article-link', 'preamble-link', 'second-article-link', 'history-link'];
+			var tab3 = ['second-article-link', 'preamble-link', 'first-article-link', 'history-link'];
+			var tab4 = ['history-link', 'preamble-link', 'first-article-link', 'second-article-link'];
+			var box1 = ['preamble-box', 'first-article-box', 'second-article-box', 'history-box'];
+			var box2 = ['first-article-box', 'preamble-box', 'second-article-box', 'history-box'];
+			var box3 = ['second-article-box', 'preamble-box', 'first-article-box', 'history-box'];
+			var box4 = ['history-box', 'preamble-box', 'first-article-box', 'second-article-box'];
+			function showTab(targets) {
+				var currentTab = document.getElementById(targets[0]);
+				var nextTab1 = document.getElementById(targets[1]);
+				var nextTab2 = document.getElementById(targets[2]);
+				var nextTab3 = document.getElementById(targets[3]);
+				currentTab.className = 'active';
+				nextTab1.className = ' ';
+				nextTab2.className = ' ';
+				nextTab3.className = ' ';
+			}
+			function showBox(targets){
+				var currentTarget = document.getElementById(targets[0]);
+				var nextBox1 = document.getElementById(targets[1]);
+				var nextBox2 = document.getElementById(targets[2]);
+				var nextBox3 = document.getElementById(targets[3]);
+				currentTarget.style.display = 'block';
+				currentTarget.className = 'code-box active';
+				nextBox1.style.display = 'none';
+				nextBox1.className = 'code-box';
+				nextBox2.style.display = 'none';
+				nextBox2.className = 'code-box';
+				nextBox3.style.display = 'none';
+				nextBox3.className = 'code-box';
+			}
+			/* function show(first, second, target){
+				var currentTarget = document.getElementById(target);
+				currentTarget.style.display = 'block';
+				currentTarget.className = 'code-box active';
+				document.getElementById(first).style.display = 'none';
+				document.getElementById(second).style.display = 'none';
+			} */
+		</script> -->
     </head>
 	<body>
 		<header>
 			<div class="nav group" id="nav">
 				<ul>
-					<li><a id="preamble-link" href="#preamble-box" class="active">Preamble</a></li>
-					<li><a id="first-article-link" href="#first-article-box" class=" ">Article 1-2</a></li>
-					<li><a id="second-article-link" href="#second-article-box" class=" ">Article 3-5</a></li>
-					<li><a id="anything-else-link" href="#anything-else-box" class="hide ">Anything Else</a></li>
+					<li><a id="preamble-link" href="#preamble-box" class="active" onclick="showTab(tab1); showBox(box1)">Preamble</a></li>
+					<li><a id="first-article-link" href="#first-article-box" class=" " onclick="showTab(tab2); showBox(box2)">Article 1-2</a></li>
+					<li><a id="second-article-link" href="#second-article-box" class=" " onclick="showTab(tab3); showBox(box3)">Article 3-5</a></li>
+					<li><a id="history-link" href="#history-box" class=" " onclick="showTab(tab4); showBox(box4)">History</a></li>
 				</ul>
 			</div>
 		</header>
@@ -39,7 +81,7 @@
 					standards of life in larger freedom,</p>
 				</div>
 			</div>
-			<div id="first-article-box" class="code-box hide">
+			<div id="first-article-box" class="code-box">
 				<p>Article 1.</p>
 				<p>All human beings are born free and equal in dignity and rights. They are endowed with 
 				reason and conscience and should act towards one another in a spirit of brotherhood.</p>
@@ -58,7 +100,7 @@
 				<p>Article 5.</p>
 				<p>No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.</p>
 			</div>
-			<div id="second-article-box" class="code-box hide">
+			<div id="second-article-box" class="code-box">
 				<div class="col">
 					<p>Article 1.</p>
 					<p>All human beings are born free and equal in dignity and rights. They are endowed with 
@@ -81,7 +123,7 @@
 					<p>No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.</p>
 				</div>
 			</div>
-			<div id="anything-else-box" class="code-box hide">
+			<div id="history-box" class="code-box">
 				<h2>HISTORY OF THE DOCUMENT</h2>
 				<p>The Universal Declaration of Human Rights, which was adopted by the UN General Assembly 
 				on 10 December 1948, was the result of the experience of the Second World War. With the end 
@@ -99,7 +141,7 @@
 			</div>
 		</main>
 		<footer>
-		
+			<script>showBox(box1);</script>
 		</footer>
 	</body>
 </html>
