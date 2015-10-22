@@ -1,4 +1,3 @@
-var tab = ['preamble-link', 'first-article-link', 'second-article-link', 'history-link'];
 var box = ['preamble-box', 'first-article-box', 'second-article-box', 'history-box'];
 function showTab(target) {
   var oldTab = document.getElementsByClassName('active-tab')[0];
@@ -11,8 +10,3 @@ function showTab(target) {
 	newBox.className = 'code-box active-box';
 	newBox.style.display = 'block';
 }
-function hideBoxes(){
-	/*var boxes = document.getElementsByClassName('code-box inactive-box');
-	boxes[0].style.display = 'none';
-	for (var this_box in boxes) {	boxes[this_box].style.display = 'none';	}*/
-}		
