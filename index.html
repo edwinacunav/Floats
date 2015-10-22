@@ -2,23 +2,24 @@
 <html>
     <head>
 	    <meta charset="utf-8">
-        <title>Human Rights</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css"/>
-		<script src="js/main.js"/></script>
+      <title>Human Rights</title>
+			<link rel="stylesheet" type="text/css" href="css/main.css"/>
+			<script src="js/main.js"/></script>
+			<script>hideBoxes()</script>
     </head>
 	<body>
 		<header>
 			<div class="nav group" id="nav">
 				<ul>
-					<li><a id="preamble-link" href="#preamble-box" class="active" onclick="showTab(tab1); showBox(box1)">Preamble</a></li>
-					<li><a id="first-article-link" href="#first-article-box" class=" " onclick="showTab(tab2); showBox(box2)">Article 1-5</a></li>
-					<li><a id="second-article-link" href="#second-article-box" class=" " onclick="showTab(tab3); showBox(box3)">Article 6-10</a></li>
-					<li><a id="history-link" href="#history-box" class=" " onclick="showTab(tab4); showBox(box4)">History</a></li>
+					<li><a id="preamble-link" href="#" class="active-tab" onclick="showTab(this); showBox(box1)">Preamble</a></li>
+					<li><a id="first-article-link" href="#" class=" " onclick="showTab(this); showBox(box2)">Article 1-5</a></li>
+					<li><a id="second-article-link" href="#" class=" " onclick="showTab(this); showBox(box3)">Article 6-10</a></li>
+					<li><a id="history-link" href="#" class=" " onclick="showTab(this); showBox(box4)">History</a></li>
 				</ul>
 			</div>
 		</header>
 		<main>
-			<div id="preamble-box" class="code-box active">
+			<div id="preamble-box" class="code-box active-box">
 			    <div class="col">
 					<p>Whereas recognition of the inherent dignity and of the equal and inalienable 
 					rights of all members of the human family is the foundation of freedom, justice 
@@ -40,7 +41,7 @@
 					standards of life in larger freedom,</p>
 				</div>
 			</div>
-			<div id="first-article-box" class="code-box">
+			<div id="first-article-box" class="code-box inactive-box">
 				<div class="col">
 					<p>Article 1.</p>
 					<p>All human beings are born free and equal in dignity and rights. They are endowed with 
@@ -63,7 +64,7 @@
 					<p>No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.</p>
 				</div>
 			</div>
-			<div id="second-article-box" class="code-box">
+			<div id="second-article-box" class="code-box inactive-box">
 				<div class="col">
 					<p>Article 6.</p>
 					<p>Everyone has the right to recognition everywhere as a person before the law.</p>
@@ -92,26 +93,27 @@
 					</ol>
 				</div>
 			</div>
-			<div id="history-box" class="code-box">
-				<h2>HISTORY OF THE DOCUMENT</h2>
-				<p>The Universal Declaration of Human Rights, which was adopted by the UN General Assembly 
-				on 10 December 1948, was the result of the experience of the Second World War. With the end 
-				of that war, and the creation of the United Nations, the international community vowed never 
-				again to allow atrocities like those of that conflict happen again. World leaders decided to 
-				complement the UN Charter with a road map to guarantee the rights of every individual everywhere. 
-				The document they considered, and which would later become the Universal Declaration of Human 
-				Rights, was taken up at the first session of the General Assembly in 1946.  The Assembly reviewed 
-				this draft Declaration on Fundamental Human Rights and Freedoms and transmitted it to the Economic 
-				and Social Council "for reference to the Commission on Human Rights for consideration . . . in its 
-				preparation of an international bill of rights." The Commission, at its first session early in 1947, 
-				authorized its members to formulate what it termed "a preliminary draft International Bill of Human 
-				Rights". Later the work was taken over by a formal drafting committee, consisting of members of the 
-				Commission from eight States, selected with due regard for geographical distribution.</p>
+			<div id="history-box" class="code-box inactive-box">
+				<div class='col-1'>
+					<h2>HISTORY OF THE DOCUMENT</h2>
+					<p>The Universal Declaration of Human Rights, which was adopted by the UN General Assembly 
+					on 10 December 1948, was the result of the experience of the Second World War. With the end 
+					of that war, and the creation of the United Nations, the international community vowed never 
+					again to allow atrocities like those of that conflict happen again. World leaders decided to 
+					complement the UN Charter with a road map to guarantee the rights of every individual everywhere. 
+					The document they considered, and which would later become the Universal Declaration of Human 
+					Rights, was taken up at the first session of the General Assembly in 1946.  The Assembly reviewed 
+					this draft Declaration on Fundamental Human Rights and Freedoms and transmitted it to the Economic 
+					and Social Council "for reference to the Commission on Human Rights for consideration . . . in its 
+					preparation of an international bill of rights." The Commission, at its first session early in 1947, 
+					authorized its members to formulate what it termed "a preliminary draft International Bill of Human 
+					Rights". Later the work was taken over by a formal drafting committee, consisting of members of the 
+					Commission from eight States, selected with due regard for geographical distribution.</p>
+				</div>
 			</div>
 		</main>
 		<footer>
 			<p>Copyleft 2015</p>
 		</footer>
-		<script>showBox(box1);</script>
 	</body>
 </html>

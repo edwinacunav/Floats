@@ -3,15 +3,18 @@
 	float: left;
 }
 header, footer {
+	width: 100%;
 	clear: both;
 }
 footer {
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 	background: #3D3D3E none repeat scroll 0% 0%;
 	font: 13px/1.4 "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
 	line-height: 1.4;
 	color: white;
 	padding: 10px 0px 10px 10px;
+	position: fixed;
+	bottom: 0px;
 }
 div .navbar .nav {
 	font-family "Helvetica Neue", Helvetica, Trebuchet, sans-serif;
@@ -31,19 +34,17 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 h2 {
-    color: aqua important;
-    /*border-top: 3px dotted blue;*/
-    font-size: 1.8em;
-    font-family: Trebuchet;
-    /* font-style: oblique; */
-    letter-spacing: 5px;
-    border: 5px solid red;
+  color: aqua important; /*border-top: 3px dotted blue;*/
+  font-size: 1.8em;
+  font-family: Trebuchet; /* font-style: oblique; */
+  letter-spacing: 5px; /* border: 5px solid red; */
 	margin-top: 5px;
 	margin-bottom: 5px;
+	
 }
 p {
-    /* color: #00FF00; font-style: italic; */
-    font-weight: 600;
+  /* color: #00FF00; font-style: italic; */
+  font-weight: 600;
 }
 .nav {
 	clear: both;
@@ -55,20 +56,22 @@ p {
 	white-space: nowrap;
 	height: 35px;
 	margin-left: 0px;
+	margin-right: 0px;
 }
 .nav a {
 	text-decoration: none;
 	color: #76DAFF;
 	display: inline-block;
 	position: relative;
-	padding: 8px 16px;
+	padding: 8px 15px;
+	margin: 0 0 0 0;
 }
-.nav a.active {
-	background: #cccccc;
+.nav a.active-tab {
+	background: #cc88cc;
 	color: #000000;
 }
-.nav a.active:after {
-	border-top-color: #cccccc;
+.nav a.active-tab:after {
+	/*border-top-color: #cccccc;*/
 }
 .nav a:hover {
 	background: #76DAFF;
@@ -76,9 +79,13 @@ p {
 }
 .nav ul {
 	list-style: outside none none;
+	margin-left: 0;
+	margin-right: 0;
 }
 .nav li {
 	display: inline-block;
+	margin-left: 0;
+	margin-right: 0;
 }
 .hide {
 	display: none !important;
@@ -91,18 +98,18 @@ p {
 	border: solid 1px black;
 	background: #ccc;
 }
-.code-box {
-	
+.active-box {
+	display: block;/* background-color: #00FF00; */
 }
-.code-box .active {
-	
-}
-.active {
-	
+.inactive-box {
+	display: none;
 }
 .col {
 	float: left;
 	width: 50%;
+	padding: 1.3em;
+}
+.col-1 {
 	padding: 1.3em;
 }
 .main {

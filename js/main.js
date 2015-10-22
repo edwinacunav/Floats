@@ -1,39 +1,18 @@
-var tab1 = ['preamble-link', 'first-article-link', 'second-article-link', 'history-link'];
-var tab2 = ['first-article-link', 'preamble-link', 'second-article-link', 'history-link'];
-var tab3 = ['second-article-link', 'preamble-link', 'first-article-link', 'history-link'];
-var tab4 = ['history-link', 'preamble-link', 'first-article-link', 'second-article-link'];
-var box1 = ['preamble-box', 'first-article-box', 'second-article-box', 'history-box'];
-var box2 = ['first-article-box', 'preamble-box', 'second-article-box', 'history-box'];
-var box3 = ['second-article-box', 'preamble-box', 'first-article-box', 'history-box'];
-var box4 = ['history-box', 'preamble-box', 'first-article-box', 'second-article-box'];
-function showTab(targets) {
-	var currentTab = document.getElementById(targets[0]);
-	var nextTab1 = document.getElementById(targets[1]);
-	var nextTab2 = document.getElementById(targets[2]);
-	var nextTab3 = document.getElementById(targets[3]);
-	currentTab.className = 'active';
-	nextTab1.className = ' ';
-	nextTab2.className = ' ';
-	nextTab3.className = ' ';
+var tab = ['preamble-link', 'first-article-link', 'second-article-link', 'history-link'];
+var box = ['preamble-box', 'first-article-box', 'second-article-box', 'history-box'];
+function showTab(target) {
+  var oldTab = document.getElementsByClassName('active-tab')[0];
+  oldTab.className = ' ';
+	target.className = 'active-tab';
+	oldBox = document.getElementsByClassName('code-box active-box')[0];
+	oldBox.className = 'code-box inactive-box';
+	oldBox.style.display = 'none';
+	var newBox = document.getElementById(box[tab.indexOf(target.id)]);
+	newBox.className = 'code-box active-box';
+	newBox.style.display = 'block';
 }
-function showBox(targets){
-	var currentTarget = document.getElementById(targets[0]);
-	var nextBox1 = document.getElementById(targets[1]);
-	var nextBox2 = document.getElementById(targets[2]);
-	var nextBox3 = document.getElementById(targets[3]);
-	currentTarget.style.display = 'block';
-	currentTarget.className = 'code-box active';
-	nextBox1.style.display = 'none';
-	nextBox1.className = 'code-box';
-	nextBox2.style.display = 'none';
-	nextBox2.className = 'code-box';
-	nextBox3.style.display = 'none';
-	nextBox3.className = 'code-box';
-}
-/* function show(first, second, target){
-	var currentTarget = document.getElementById(target);
-	currentTarget.style.display = 'block';
-	currentTarget.className = 'code-box active';
-	document.getElementById(first).style.display = 'none';
-	document.getElementById(second).style.display = 'none';
-} */			
+function hideBoxes(){
+	/*var boxes = document.getElementsByClassName('code-box inactive-box');
+	boxes[0].style.display = 'none';
+	for (var this_box in boxes) {	boxes[this_box].style.display = 'none';	}*/
+}		
