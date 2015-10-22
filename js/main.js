@@ -1,3 +1,4 @@
+var tab = ['preamble-link', 'first-article-link', 'second-article-link', 'history-link'];
 var box = ['preamble-box', 'first-article-box', 'second-article-box', 'history-box'];
 function showTab(target) {
   var oldTab = document.getElementsByClassName('active-tab')[0];
@@ -9,4 +10,4 @@ function showTab(target) {
 	var newBox = document.getElementById(box[tab.indexOf(target.id)]);
 	newBox.className = 'code-box active-box';
 	newBox.style.display = 'block';
-}
+}	
